@@ -7,16 +7,27 @@ main > * {
 
 
 /* Define grid container*/
+/* Mobile */
 main {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-areas:
 		"header"
+		"contenido"
 		"izquierda"
 		"derecha"
 		"footer";
-	
+}
 
+/* Desktop */
+@media (min-width: 800px){
+	main{
+		grid-template-areas:
+		"header header header"
+		"izquierda contenido derecha"
+		"izquierda contenido derecha"
+		"footer contenido  derecha"	
+	}
 }
 
 /* Grid area */
@@ -25,11 +36,16 @@ header{
 
 }
 
-aside{
+
+aside: first-of-type {
 	grid-area: izquierda
 }
 
 article{
+	grid-area: contenido;
+}
+
+aside: last-of-type{
 	grid-area: derecha;
 }
 

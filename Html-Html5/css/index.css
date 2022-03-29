@@ -1,0 +1,238 @@
+/* ******************** */
+/* container-menu       */
+/* index.html           */
+/* ******************** */	
+
+	.container-main{
+			border: 3px solid Dodgerblue;		
+			display: flex;			
+			flex-direction: column; 		/* column column-reverse row row-reverse */			
+			flex-wrap: row wrap; 				/* wrap nowrap wrap-reverse [row wrap] */	
+			justify-content: center; 	/* center; flex-start; space-arround; space-between */	
+			
+			
+	}
+		
+	
+		
+	.hello{
+			align-self: auto;
+			flex: 1;
+	}
+		
+	.freecod{
+			align-self: auto;
+			flex: 2;
+	}
+
+	.flexbox{
+			align-self: auto;
+			flex: 1;
+	}
+
+
+
+/* container-home */
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  
+	/* column column-reverse row row-reverse */
+	/*flex-direction: row;*/ 			
+	/* wrap nowrap wrap-reverse [row wrap] */		
+	/*flex-wrap: row wrap;*/ 	
+	/*Start items: center; flex-start; space-arround; space-between */				
+	/*justify-content: flex-start;*/ 	
+	/* center; flex-start; flex-end; stretch baseline */
+	/*align-items: center;*/		
+	/* space-between; space-around stretch; center; flex-start; flex-end */	
+	margin-bottom: 10px;
+	
+}
+
+.home{
+	/* margin-right: auto;*/
+	align-self: auto;
+}
+
+.search{
+	/* anchura item search*/
+	flex: 2; 
+}
+
+.profile{
+	margin-left: auto;
+}
+
+
+/* ******************** */
+/* container-languages */
+/* ******************** */
+
+.container-languages{
+	margin-bottom: 5px;
+	border: 5px solid #ffcc5c
+
+}
+
+
+.container-languages > div{
+	flex: 1;
+  /* flex-grow, flex-shrink, flex-basis */
+
+
+}
+
+.container-languages> .react {
+	flex: 2;
+}
+
+
+/* ******************** */
+/*   container-ide      */
+/*  leccion; wrap       */
+/* ******************** */
+
+.container-ide{
+	margin-bottom: 5px;
+	border: 5px solid #ffcc5c;
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.container-movies > div{
+	width: 300px;
+}
+
+
+/* ******************** */
+/*   container-movies   */
+/*  leccion; flex       */
+/* ******************** */
+
+.container-movies{	
+margin-bottom: 5px;
+	border: 5px solid #ffcc5c;
+	display: flex;
+	
+}
+
+.starwars{
+	/* flex: 1 1 0;*/
+	/*	flex [flex-grow flex-shrink flex-basis] */
+	flex-grow: 1;	
+	flex-shrink: 1;
+	flex-basis: 200px;
+
+}
+
+
+.startrek{
+	/* flex: 1;*/	
+	flex-grow: 1;	
+	flex-shrink: 1;
+	flex-basis: 200px; 
+
+}
+
+
+
+/* ******************** */
+/*   container-item   */
+/*  leccion; order      */
+/* ******************** */
+
+.container-item{	
+	margin-bottom: 5px;
+	border: 5px solid #ffcc5c;
+	display: flex;	
+}
+
+.item1{
+	order: 1;
+}
+
+.item2{
+	order: 0; /* order at the end [-1 va al principio]*/
+}
+
+.item3{
+	order: -1;
+}
+
+
+/* ******************** */
+/*   container-navigation   */
+/* ******************** */
+
+.container-navigation{
+	margin-bottom: 5px;
+	border: 5px solid #ffcc5c;
+	display: flex;
+}
+
+.search{
+	flex: 1;
+
+}
+
+@media all and (max-width: 800px){
+	
+	.container-navigation{
+		flex-wrap: wrap;	
+	}
+	
+	.container-navigation > li{
+		flex: 1 1 50%;	
+	}
+	
+	.search > input {
+		text-align: center;
+	
+	}
+}
+
+@media all and (max-width: 600px){
+
+	.container-navigation > li{
+		flex: 1 1 100%;	
+	}
+
+	.search{
+		order:1; 
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
