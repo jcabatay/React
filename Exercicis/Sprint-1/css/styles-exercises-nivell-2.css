@@ -83,40 +83,10 @@ main > * {
 	text-align: center;
 	margin: 5px;
 
-
-
 }
-/*
-.container-menu > div:nth-child(1){
-	background-color: #ffffff;
-	flex: 1;
+.caja-menu a{
+		text-decoration: none;
 }
-
-.container-menu > div:nth-child(2){
-	background-color: #ffffff;
-	flex: 1;
-}
-
-.container-menu > div:nth-child(3){
-	background-color: #ffffff;
-	flex: 1;
-}
-
-.container-menu > div:nth-child(4){
-	background-color: #ffffff;
-	flex: 1;
-
-}
-
-.container-menu > div:nth-child(5){
-	background-color: #ffffff;
-	flex: 1;
-}
-
-.container-menu > div:nth-child(6){
-	background-color: #ffffff;
-	flex: ;
-} */
 
 
 /* columna central cultura, gastronomica, turismo, vida nocturana */
