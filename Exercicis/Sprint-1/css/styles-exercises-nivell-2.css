@@ -1,0 +1,305 @@
+main > * {
+	background-color: goldenrod;
+	padding: 1px;
+	font-size 3em;
+}
+
+
+.container-banner{
+	position: relative;
+  background-image: url("./../images/japan/header.jpg");
+	background-position: center;
+	background-size: 100%;
+	height: 250px;
+  border: 1px solid #ffffff;
+	/* padding: 5px 5px 5px 5px; */
+	margin: 5px 5px 5px 5px;
+}
+
+.text-banner{
+	opacity: 0.6;
+	/* border: 1px solid #ffcc5c; */
+	align-content: center;
+	text-align: center;
+	color: #f69570;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.container-menu-options{
+	background-color: #4e4e6a;
+	border: 10px solid #4e4e6a;
+	display: flex;
+
+}
+
+/* header  contains: logo + menu + banner*/
+.container-header{
+	background-color: #fffffff;
+	padding: 1px;
+	display: flex;
+}
+
+/* .container-logo{
+	background-image: image("./../images/japan/logo.png");
+	background-color: #ffffff;
+	padding: 1px;
+	flex: 1;
+	align-self: center;
+} */
+
+/* menu */
+.container-menu{
+	background-color: #ffffff;
+	background-image: image("./../images/japan/logo.png");
+	/* padding: 1px; */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	/* flex: 6; */
+	/* align-items: center; */
+	/* border: 1px solid #aeaeae;
+	opacity: 60%; */
+	margin: 0 auto;
+	margin: 10px 10px 10px 10px;
+	justify-content: space-between;
+	/* align-items: center; */
+
+}
+
+.caja-menu{
+	background-color: #ffffff;
+	/* border: 1px solid #cccccc; */
+	flex: 1;
+	align-self: center;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 14px;
+	opacity: 60%;
+	/* line-height: 20px; */
+	text-align: center;
+	margin: 5px;
+
+
+
+}
+/*
+.container-menu > div:nth-child(1){
+	background-color: #ffffff;
+	flex: 1;
+}
+
+.container-menu > div:nth-child(2){
+	background-color: #ffffff;
+	flex: 1;
+}
+
+.container-menu > div:nth-child(3){
+	background-color: #ffffff;
+	flex: 1;
+}
+
+.container-menu > div:nth-child(4){
+	background-color: #ffffff;
+	flex: 1;
+
+}
+
+.container-menu > div:nth-child(5){
+	background-color: #ffffff;
+	flex: 1;
+}
+
+.container-menu > div:nth-child(6){
+	background-color: #ffffff;
+	flex: ;
+} */
+
+
+/* columna central cultura, gastronomica, turismo, vida nocturana */
+.container-central{
+	background-color: #ffffff;
+	flex-flow: row wrap;
+	display: flex;
+	/* border: 1px solid #c6c6c6; */
+	/* border: 5px solid #ffffff; */
+	/* padding: 5px 5px 5px 5px; */
+	/* margin: 5px 5px 5px 5px; */
+	/* flex-direction: row;
+	flex-wrap: wrap; */
+	/* flex direction:row  + flex-wrap:wrap*/
+
+}
+
+/* right column */
+.container-central-right {
+	background-color: #cccccc;
+	flex: 1;
+	color: #2c2c2c;
+	/*mirar flex grow*/
+	text-align: left;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 13px;
+	display: flex;
+	border: 5px solid #ffffff;
+	padding: 10px 10px 10px 10px;
+	margin: 0px 0px 0px 5px;
+	width: 50px;
+	/* border-color: #ffffff; */
+	/* border: 5px; */
+
+}
+
+.container-central-left {
+	background-color: #cccccc;
+	display: flex;
+	flex: 6;
+	border: 5px solid #ffffff;
+	flex-wrap: wrap;
+	/* padding: 5px 5px 5px 5px; */
+	/* margin: 5px 5px 5px 5px; */
+	/* line-height: 33%; */
+	/* border: 5px solid #ffffff; */
+	/* flex items wrap if necesary */
+	/* flex-direction: row; */
+
+}
+
+/* pie de las cuatro columnas */
+.container-central-footer {
+	margin: 5px 5px 5px 5px;
+	padding: : 5px 5px 5px 5px;
+  /* background-color: #4e4e6a; */
+  /* flex: 1; */
+	/* font-family: 'Courier New' Courier, monospace; */
+	/* text-align: left; */
+	/* line-height: 1; */
+	/* border: 1px solid #ffffff;  */
+}
+
+/* cultura */
+.container-section{
+	background-color: #ececec;
+	width: 310px;
+	display:grid;
+	/* padding: 5px 5px 5px 5px; */
+	margin: 5px 5px 5px 5px;
+		/* border: 1px solid #aaff00; */
+	/* flex-direction: column; */
+	/* flex items wrap if necesary */
+	/* flex-wrap: wrap;  */
+}
+
+.container-section > div:nth-child(1) {
+  flex: 1;
+	color: #d1ca82;
+	padding: 5px 5px 5px 5px;
+	/* margin: 5px 5px 5px 5px; */
+	position: relative; /* conected -> bottomleft*/
+	/* padding: 5px 5px 5px 5px; */
+	/* background-color: #ececec; */
+	/* margin: 5px 5px 5px 5px; */
+	/* border: 20px solid #ffffff; */
+	/* background-image: url("./../images/japan/sakura.jpg"); */
+	/* background-position: cnter; */
+	/* background-size:300px 350px; */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
+	/* background-attachment: fixed; */
+	/* background-repeat: no-repeat; */
+	/* background-size: 300px 250px; */
+
+}
+
+/* title */
+.container-section > div:nth-child(2) {
+	font-family: 'Courier New' Courier, monospace;
+	text-align: left;
+	/* line-height: 2.6; */
+	font-size: 22px;
+	background-color: #f08080;
+	color: #ffffff;
+	border: 5px solid #ececec;
+	padding: 5px 5px 5px 5px;
+	/* margin: 5px 5px 5px 5px; */
+	/* background-color: #4e4e6a; */
+	/* flex: 1; */
+
+}
+
+/* content */
+.container-section > div:nth-child(3) {
+	column-count: 2;
+	color: #9c9b9b;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+	text-align: left;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 12px;
+	/* border: 1px solid #ff0000; */
+	/* border: 1px solid #ffffff; */
+	/* align-items: flex-start; */
+	/* padding: 5px 5px 5px 5px; */
+	/* margin: 5px 5px 5px 5px; */
+	/* background-color: #4e4e6a; */
+  /* flex: 1; */
+	/* font-family: 'Courier New' Courier, monospace;
+	text-align: left;
+	line-height: 1;
+	border: 1px solid #ffffff;*/
+
+}
+
+
+/* leer mas */
+.container-section > div:nth-child(4) {
+	padding: 10px 10px 10px 10px;
+	text-align: left;
+	color: #f69570;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 12px;
+	/* background-color: #4e4e6a; */
+  /* flex: 1; */
+	/* font-family: 'Courier New' Courier, monospace;
+	text-align: left;
+	line-height: 1;
+	border: 1px solid #ffffff; */
+}
+
+.container-central-footer{
+	padding: 10px 10px 10px 10px;
+	text-align: left;
+	color: #2c2c2c;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 12px;
+	/* background-color: #4e4e6a; */
+  /* flex: 1; */
+	/* font-family: 'Courier New' Courier, monospace;
+	text-align: left;
+	line-height: 1;
+	border: 1px solid #ffffff; */
+}
+
+
+
+.foot-text{
+	font-family: 'Courier New' Courier, monospace;
+	text-align: center;
+	color: #f69570;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 15px;
+	background-color: #cccccc;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+}
+
+.bottomleft{
+	position: absolute;
+	font-size: 18 px;
+	left: 15px;
+	bottom: 20px;
+
+}
