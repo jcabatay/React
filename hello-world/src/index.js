@@ -12,12 +12,12 @@
 // const container = document.getElementById('root')
 // container.appendChild(element)
 
+import react from 'react'
+import ReactDOM from 'react-dom'
+import Card from './components/Card'//componente
 
 
 /* Hello ReactDom */
-
-import react from 'react'
-import ReactDOM from 'react-dom'
 
 const user = {
   firstName: 'Joel',
@@ -64,3 +64,9 @@ const elementImage = <img src={require("./images/chico-icon.png")} width="100" h
 // const elementImage = <img src={user.avatar}/>
 const containerImage = document.getElementById('divAvatar')
 ReactDOM.render(elementImage,containerImage)
+
+
+/* uso componente*/
+
+const containerComponente = document.getElementById('divComponente')
+ReactDOM.render(<Card/>,containerComponente)
