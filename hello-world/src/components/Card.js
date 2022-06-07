@@ -14,7 +14,9 @@ class Card extends React.Component{
       <div className="card mx-auto Fitness-Card"
       style={{
         // injeccion de props
-        backgroundImage:`url(${circleImage}), linear-gradient(to right, {this.props.leftColor}},{this.props.rightColor})`
+        // backgroundImage:`url(${circleImage}), linear-gradient(to right, #A74CF2, #617BFB)`
+        backgroundImage:`url(${circleImage}), linear-gradient(to right, ${this.props.leftColor}, ${this.props.rightColor})`
+
       }}
 
       >
