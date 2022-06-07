@@ -5,6 +5,24 @@ import circleImage from '../images/circles.png'
 
 
 class Card extends React.Component{
+
+  // constructor
+  constructor(props){
+    super(props)
+    this.state = {
+    image: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/bulbasaur.png?alt=media&token=567caf19-af47-414e-a9d4-3854ab24c7dc'
+    }
+  }
+
+  componentDidMount(){
+    // se ejecuta despues de un componente se monte
+    setTimeout(() =>{
+      this.setState({
+        image: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06'
+      })
+    },5000)
+  }
+
   // background: url('../../images/circles.png') no-repeat, linear-gradient(to right, #A74CF2, #617BFB);
   render(){
     // si queremos quitar this.prop declarmos const
@@ -23,7 +41,7 @@ class Card extends React.Component{
         <div className="card-body">
             <div className="row center">
                 <div className="col-6">
-                    <img src={this.props.img} alt="cards images" className="float-right"/>
+                    <img src={this.state.image} alt="cards images" className="float-right"/>
                 </div>
                 <div className="col-6 Fitness-Card-Info">
                   <h1>{this.props.title}</h1>
