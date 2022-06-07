@@ -1,6 +1,7 @@
 /*
  * source: https://www.youtube.com/watch?v=zLP1fFxY__o&list=PLIddmSRJEJ0vEBB6ECegg35IQ-sWjSDdo&index=6
  * git tutorial: https://github.com/rulpalacios/FitnessApp
+ * //https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06
 */
 
 /*
@@ -12,9 +13,11 @@
 // const container = document.getElementById('root')
 // container.appendChild(element)
 
-import react from 'react'
+
+import React from 'react'
 import ReactDOM from 'react-dom'
-import Card from './components/Card'//componente
+import Card from './components/Card'  //componente
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 /* Hello ReactDom */
@@ -60,13 +63,19 @@ const containerGreeting = document.getElementById('greeting')
 ReactDOM.render(elementGreeting,containerGreeting)
 
 /* */
-const elementImage = <img src={require("./images/chico-icon.png")} width="100" height="100"/>
+const elementImage = <img src={require("./images/chico-icon.png")} alt="Avatar" width="100" height="100"/>
 // const elementImage = <img src={user.avatar}/>
 const containerImage = document.getElementById('divAvatar')
 ReactDOM.render(elementImage,containerImage)
 
 
-/* uso componente*/
+/* uso componente Card*/
 
-const containerComponente = document.getElementById('divComponente')
-ReactDOM.render(<Card/>,containerComponente)
+const containerComponent = document.getElementById('divComponent')
+ReactDOM.render(<Card
+                    title="Technique Guides"
+                    description="Learn amazing street workout and calisthenics"
+                    img="https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06"
+                    leftColor="#617BFB"
+                    rightColor="#A74CF2"
+  />,containerComponent)
