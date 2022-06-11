@@ -17,52 +17,50 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import Exercises from './pages/Exercises'
+
+import AddButton from './components/AddButton'
+import App from './components/App'
 
 
 /* Hello ReactDom */
-const user = {
-  firstName: 'Joel',
-  lastName: 'Cabatay'
-  // avatar: 'images/chico-icon.png'
-
-}
+// const user = {
+//   firstName: 'Joel',
+//   lastName: 'Cabatay'
+// }
 
 /* Muestra el nombre*/
-const name = 'ascii274'
-const element = <h1>Hello {name}</h1>
-const container = document.getElementById('root')
-ReactDOM.render(element,container)
+// const name = 'ascii274'
+// const element = <h1>Hello {name}</h1>
+// const container = document.getElementById('root')
+// ReactDOM.render(element,container)
 
 
 /* Muestra nombre con function */
-
-function getName(user){
-  return `${user.firstName} ${user.lastName}`
-}
-
-const elementGetName = <h1>Hello {getName(user)}</h1>
-const containerName = document.getElementById('name')
-// ReactDOM.render(__QUE__, __DONDE__)
-ReactDOM.render(elementGetName, containerName)
+// function getName(user){
+//   return `${user.firstName} ${user.lastName}`
+// }
+//
+// const elementGetName = <h1>Hello {getName(user)}</h1>
+// const containerName = document.getElementById('name')
+// // ReactDOM.render(__QUE__, __DONDE__)
+// ReactDOM.render(elementGetName, containerName)
 
 
 
 /* Muestra nombre con function if*/
-function getGreeting(user){
-  if(user){
-    return <h1>Hello {getName(user)}</h1>
-  }
-  return <h1>Hello Stranger</h1>
-}
-
-
-const elementGreeting = <div>{getGreeting()}</div>
-const containerGreeting = document.getElementById('greeting')
-ReactDOM.render(elementGreeting,containerGreeting)
+// function getGreeting(user){
+//   if(user){
+//     return <h1>Hello {getName(user)}</h1>
+//   }
+//   return <h1>Hello Stranger</h1>
+// }
+//
+// const elementGreeting = <div>{getGreeting()}</div>
+// const containerGreeting = document.getElementById('greeting')
+// ReactDOM.render(elementGreeting,containerGreeting)
 
 /* */
-const elementImage = <img src={require("./images/chico-icon.png")} alt="Avatar" width="100" height="100"/>
+const elementImage = <img src={require("./images/chico-icon.png")} alt="Avatar" width="50" height="50"/>
 // const elementImage = <img src={user.avatar}/>
 const containerImage = document.getElementById('divAvatar')
 ReactDOM.render(elementImage,containerImage)
@@ -70,5 +68,8 @@ ReactDOM.render(elementImage,containerImage)
 
 /* uso componente Card*/
 
-const containerComponent = document.getElementById('divComponent')
-ReactDOM.render(<Exercises/>,containerComponent)
+const containerComponent = document.getElementById('divExercises')
+ReactDOM.render(<App/>,containerComponent)
+
+const containerAddButton = document.getElementById('divAddButton')
+ReactDOM.render(<AddButton/>,containerAddButton)
