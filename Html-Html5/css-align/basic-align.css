@@ -1,8 +1,6 @@
 .container > div {
-	flex: 1;
-	/* flex-grow, flex-shrink, flex-basis*/
 	padding: 10px;
-  	text-align: center;
+	text-align: center;
   	font-size: 2em;
   	color: #ffeead;
 }
@@ -13,23 +11,21 @@ body{
 
 html, body {
 	box-sizing: border-box;
+	height: 100%;
   	background-color: #ffeead;	
   	margin: 10px;
-  	height: 100%;
+  	
 }
 
-/* ********* */
-/*  Starting */
-/* ********* */
-/* Ojo container div dos formas de presentar. ver .container>.serach*/
+
 
 .container > div:nth-child(1) {
-	flex: 1;
+	
   	background-color: #96ceb4;	
 }
 
 .container > .search {
-	flex: 2;
+	
   	background-color: #ff6f69;
 }
 
