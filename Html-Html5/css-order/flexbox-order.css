@@ -1,0 +1,32 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+
+.item1{
+	order: 0;
+}
+
+.item2 {
+  order: 0;
+}
+
+.item3 {
+  order: 0;
+}
+
+.facebook{
+	order: 1;
+
+}
+
+.instagram{
+	order: 0;
+	
+}
+
+.twitter{
+	order: -1;
+
+}
