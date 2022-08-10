@@ -1,0 +1,51 @@
+main > * {
+	background-color: goldenrod;
+	padding: 10px;
+	font-size 3em;
+}
+
+/* Define grid container*/
+/* Mobile */
+main {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		"header"
+		"contenido"
+		"izquierda"
+		"derecha"
+		"footer";
+}
+
+/* Desktop */
+@media (min-width: 800px){
+	main{
+		grid-template-areas:
+		"header header header"
+		"izquierda contenido derecha"
+		"izquierda contenido derecha"
+		"footer footer  footer"
+	}
+}
+
+/* Grid area */
+header{
+	grid-area: header;
+
+}
+
+aside: first-of-type {
+	grid-area: izquierda
+}
+
+article{
+	grid-area: contenido;
+}
+
+aside: last-of-type{
+	grid-area: derecha;
+}
+
+footer{
+	grid-area: footer;
+}

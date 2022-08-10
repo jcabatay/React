@@ -1,0 +1,20 @@
+/* 
+	flex-start flex-end center space-around
+	space-between space-evenly 
+	*/
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  
+}
+
+.logout{
+	align-self: flex-start;
+}
+
+.home{
+	align-self: flex-end;
+
+}

@@ -1,0 +1,28 @@
+/* 
+	flex-start flex-end center space-around
+	space-between space-evenly 
+	*/
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+    
+}
+
+
+.home{
+	
+	/* flex: grow-value, shrink-value,basis-value */
+	/* flex: 1 1 0; */	
+  	flex-shrink: 1;	/* encogerse */
+  	flex-grow: 10; 		/* grow faster */
+  	flex-basis: 400px;  
+
+}
+
+
+.logout{
+	flex-shrink: 1;
+	flex-grow: 1;
+	flex-basis: 400px;
+}
+

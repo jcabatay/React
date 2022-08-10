@@ -1,0 +1,40 @@
+.container > div {
+	padding: 10px;
+	text-align: center;
+  	font-size: 2em;
+  	color: #ffeead;
+}
+
+body{
+	margin: 0;
+}
+
+html, body {
+	box-sizing: border-box;
+	height: 100%;
+  	background-color: #ffeead;	
+  	margin: 10px;
+  	
+}
+
+
+
+.container > div:nth-child(1) {
+	
+  	background-color: #96ceb4;	
+}
+
+.container > .search {
+	
+  	background-color: #ff6f69;
+}
+
+.container > div:nth-child(3) {
+  	background-color: #88d8b0;
+}
+
+.container > div:nth-child(4) {
+  	background-color: #ff6f69;
+}
+
+
