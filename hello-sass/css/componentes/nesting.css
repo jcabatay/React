@@ -1,6 +1,0 @@
-.menu {
-  margin: 0;
-  grid-template-columns: 20px 20px;
-  grid-template-rows: auto; }
-  .menu .link {
-    text-decoration: none; }
