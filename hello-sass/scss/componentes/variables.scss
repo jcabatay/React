@@ -1,0 +1,20 @@
+$number1: 1;
+$number2: 2;
+$string-name: 'joel';
+$string-skill: 'java';
+$list1: analyn shiva joel;
+
+$map: (
+  primary: red,
+  secondary: green,
+  tertiary: blue
+);
+
+// uso variables
+$color: red;
+
+.body{
+  color: $color; // usando variable
+  @debug type-of($number1);
+  @debug type-of($list1);
+}

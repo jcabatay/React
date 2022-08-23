@@ -1,0 +1,14 @@
+.menu{
+
+  margin: 0;
+
+  grid-template: {
+    columns: 20px 20px;
+    rows: auto;
+
+  }
+
+  .link{
+    text-decoration: none;
+  }
+}
